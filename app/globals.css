@@ -543,3 +543,363 @@ a {
   flex-wrap: wrap;
   gap: var(--spacing-sm);
 }
+
+/* ==========================================================================
+   FlowStack Automation Pipeline & Recipe Hero
+   ========================================================================== */
+.flowstack-hero {
+  margin-bottom: var(--spacing-xl);
+  padding: var(--spacing-xl) 0 var(--spacing-lg);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.flowstack-hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+@media (max-width: 960px) {
+  .flowstack-hero-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+}
+
+.flowstack-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background-color: var(--badge-bg);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 9999px;
+  margin-bottom: var(--spacing-md);
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--badge-text);
+}
+
+.flowstack-title {
+  font-size: clamp(28px, 3.2vw, 42px);
+  line-height: 1.15;
+  margin-bottom: var(--spacing-sm);
+  color: var(--text-ink);
+  font-weight: 800;
+}
+
+.flowstack-gradient-text {
+  background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.flowstack-lead {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-body);
+  margin-bottom: var(--spacing-lg);
+  max-width: 520px;
+}
+
+.flowstack-search-box {
+  display: flex;
+  align-items: center;
+  background-color: rgba(15, 23, 42, 0.9);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-main);
+  padding: 4px 6px 4px 14px;
+  margin-bottom: var(--spacing-md);
+  transition: all 0.15s ease;
+}
+
+.flowstack-search-box:focus-within {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+}
+
+.flowstack-search-icon {
+  color: var(--text-muted);
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.flowstack-search-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--text-ink);
+  outline: none;
+}
+
+.flowstack-search-btn {
+  background-color: var(--color-primary);
+  color: var(--color-primary-text);
+  border: none;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.flowstack-search-btn:hover {
+  background-color: var(--color-primary-active);
+}
+
+.flowstack-tags-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: var(--spacing-lg);
+  flex-wrap: wrap;
+}
+
+.flowstack-tags-label {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.flowstack-tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.flowstack-tag-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: var(--text-body);
+  background-color: rgba(30, 41, 59, 0.6);
+  border: 1px solid var(--border-color);
+  padding: 4px 10px;
+  border-radius: 9999px;
+  transition: all 0.15s ease;
+}
+
+.flowstack-tag-pill:hover {
+  background-color: rgba(51, 65, 85, 0.8);
+  border-color: var(--border-bright);
+  color: var(--text-ink);
+}
+
+.flowstack-metrics-strip {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding-top: var(--spacing-sm);
+}
+
+.flowstack-metric-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.flowstack-metric-val {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 800;
+  color: #38bdf8;
+}
+
+.flowstack-metric-desc {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.flowstack-metric-divider {
+  width: 1px;
+  height: 24px;
+  background-color: var(--border-color);
+}
+
+/* Pipeline Node Card */
+.flowstack-pipeline-card {
+  background: linear-gradient(180deg, #111a33 0%, #0c1224 100%);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  border-radius: 16px;
+  padding: var(--spacing-lg);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.5);
+}
+
+.pipeline-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-sm);
+}
+
+.pipeline-title-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pipeline-pulse-sky {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #38bdf8;
+  box-shadow: 0 0 8px #38bdf8;
+}
+
+.pipeline-header-title {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text-ink);
+}
+
+.pipeline-recipe-badge {
+  font-size: 10.5px;
+  font-family: var(--font-mono);
+  background-color: rgba(56, 189, 248, 0.15);
+  color: #7dd3fc;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.pipeline-recipes-nav {
+  display: flex;
+  gap: 6px;
+  background-color: rgba(15, 23, 42, 0.8);
+  padding: 4px;
+  border-radius: 6px;
+  margin-bottom: 14px;
+}
+
+.pipeline-recipe-btn {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 11px;
+  font-weight: 500;
+  padding: 6px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pipeline-recipe-btn.active {
+  background-color: var(--color-primary);
+  color: #0b0f19;
+  font-weight: 700;
+}
+
+.pipeline-canvas-nodes {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.pipeline-node {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 10px 12px;
+  border-radius: 8px;
+  transition: all 0.15s ease;
+}
+
+.node-icon-box {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.node-icon-box.trigger {
+  background-color: rgba(245, 158, 11, 0.2);
+  color: #fbbf24;
+}
+
+.node-icon-box.transform {
+  background-color: rgba(139, 92, 246, 0.2);
+  color: #c084fc;
+}
+
+.node-icon-box.action {
+  background-color: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+}
+
+.node-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.node-step-tag {
+  font-size: 9.5px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  letter-spacing: 0.5px;
+}
+
+.node-text {
+  font-size: 12px;
+  font-weight: 600;
+  color: #f1f5f9;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pipeline-connector-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12px;
+}
+
+.connector-arrow {
+  color: #38bdf8;
+}
+
+.pipeline-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4px;
+}
+
+.pipeline-latency-tag {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+}
+
+.pipeline-submit-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #38bdf8;
+  font-size: 12px;
+  font-weight: 600;
+  transition: opacity 0.15s ease;
+}
+
+.pipeline-submit-link:hover {
+  opacity: 0.85;
+}
+
