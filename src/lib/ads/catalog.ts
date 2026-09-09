@@ -4,29 +4,131 @@ import { request, mockMode } from './client';
 const MOCK_PRODUCTS: Product[] = [
   {
     "id": "fs-1",
-    "title": "ZenFlow OS",
-    "tagline": "Keyboard-driven async work hub combining tasks, docs, and screen recordings",
-    "description": "Replace fragmented communication with unified time-blocked sprints and contextual project canvases.",
-    "logo": "https://placehold.co/96x96/1e293b/38bdf8?text=ZF",
-    "link": "https://example.com/zenflow",
-    "category": "Async Collaboration",
+    "title": "n8n Automator",
+    "tagline": "Fair-code workflow automation tool with 400+ native nodes and custom JS/Python execution",
+    "link": "https://n8n.io",
+    "category": "Automation",
+    "upvotes": 490,
     "tags": [
-      "productivity",
-      "workflow",
-      "teams"
+      "automation",
+      "n8n",
+      "workflow"
     ],
     "techStack": [
-      "Electron",
-      "React",
-      "Rust"
+      "TypeScript",
+      "Node.js",
+      "Vue"
     ],
-    "coverImages": [],
-    "upvotes": 420,
-    "launchedAt": "2026-08-18T05:12:33.188Z",
     "maker": {
-      "name": "Liam Ross",
-      "username": "lross",
-      "avatar": "https://placehold.co/64x64/334155/38bdf8?text=L"
+      "name": "Jan Oberhauser",
+      "avatar": "https://placehold.co/64x64/06b6d4/ffffff?text=N8"
+    }
+  },
+  {
+    "id": "fs-2",
+    "title": "Zapier Central",
+    "tagline": "AI-powered workflow workspace where AI bots can execute actions across 6,000+ business apps",
+    "link": "https://zapier.com",
+    "category": "Automation",
+    "upvotes": 450,
+    "tags": [
+      "ai",
+      "zapier",
+      "automation"
+    ],
+    "techStack": [
+      "Python",
+      "React",
+      "AWS"
+    ],
+    "maker": {
+      "name": "Wade Foster",
+      "avatar": "https://placehold.co/64x64/3b82f6/ffffff?text=ZP"
+    }
+  },
+  {
+    "id": "fs-3",
+    "title": "Make.com",
+    "tagline": "Visual platform to design, build, and automate anything from simple tasks to complex enterprise processes",
+    "link": "https://make.com",
+    "category": "Automation",
+    "upvotes": 410,
+    "tags": [
+      "visual-builder",
+      "integrations"
+    ],
+    "techStack": [
+      "Node.js",
+      "React"
+    ],
+    "maker": {
+      "name": "Make Team",
+      "avatar": "https://placehold.co/64x64/f59e0b/ffffff?text=MK"
+    }
+  },
+  {
+    "id": "fs-4",
+    "title": "Trigger.dev",
+    "tagline": "Developer-first background jobs platform for TypeScript with no timeouts and full observability",
+    "link": "https://trigger.dev",
+    "category": "Developer Tools",
+    "upvotes": 380,
+    "tags": [
+      "background-jobs",
+      "typescript",
+      "serverless"
+    ],
+    "techStack": [
+      "TypeScript",
+      "Postgres",
+      "Prisma"
+    ],
+    "maker": {
+      "name": "Matt Aitken",
+      "avatar": "https://placehold.co/64x64/10b981/ffffff?text=TD"
+    }
+  },
+  {
+    "id": "fs-5",
+    "title": "Activepieces",
+    "tagline": "Open source no-code business automation alternative with community-maintained pieces",
+    "link": "https://activepieces.com",
+    "category": "Automation",
+    "upvotes": 350,
+    "tags": [
+      "open-source",
+      "automation"
+    ],
+    "techStack": [
+      "TypeScript",
+      "Angular",
+      "Node"
+    ],
+    "maker": {
+      "name": "Ashraf Samhouri",
+      "avatar": "https://placehold.co/64x64/ec4899/ffffff?text=AP"
+    }
+  },
+  {
+    "id": "fs-6",
+    "title": "Inngest",
+    "tagline": "Event-driven background execution platform with automatic retries, step functions, and flow control",
+    "link": "https://inngest.com",
+    "category": "Developer Tools",
+    "upvotes": 330,
+    "tags": [
+      "event-driven",
+      "queue",
+      "workflow"
+    ],
+    "techStack": [
+      "Go",
+      "TypeScript",
+      "React"
+    ],
+    "maker": {
+      "name": "Tony Holdstock",
+      "avatar": "https://placehold.co/64x64/a78bfa/ffffff?text=IN"
     }
   }
 ];
