@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import Link from 'next/link';
 import { GitBranch, Workflow, Cpu, Webhook, ArrowRight, CheckCircle2, Zap, Layers, RefreshCw, Send } from 'lucide-react';
 
 export function LandingSections() {
@@ -150,12 +149,12 @@ export function LandingSections() {
             Help founders and platform teams automate repetitive workflows with your integration, SDK, or recipe.
           </p>
           <div className="launch-cta-buttons">
-            <Link href="/submit" className="launch-cta-primary">
+            <a href="/submit" className="launch-cta-primary">
               Submit Automation Recipe <ArrowRight size={15} />
-            </Link>
-            <Link href="/category/automation" className="launch-cta-secondary">
+            </a>
+            <a href="/category/automation" className="launch-cta-secondary">
               Browse Workflows
-            </Link>
+            </a>
           </div>
         </div>
       </section>
