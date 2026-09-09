@@ -1,16 +1,18 @@
 ---
 import Layout from '@/layouts/Layout.astro';
-import { HeroSection } from '@/components/HeroSection';
-import { LandingSections } from '@/components/LandingSections';
+import { HeroLanding } from '@/components/landing/HeroLanding';
+import { StatsSection } from '@/components/landing/StatsSection';
+import { FeaturesSection } from '@/components/landing/FeaturesSection';
+import { CTASection } from '@/components/landing/CTASection';
 
 export const prerender = true;
 ---
 
-<Layout>
-  <div class="w-full">
-    <HeroSection client:load />
-    <div class="container">
-      <LandingSections client:visible />
-    </div>
+<Layout title="FlowStack — Work Smarter, Ship Faster" description="Discover 1,400+ productivity and collaboration tools — project management, async communication, time tracking, and team automation.">
+  <div class="fs-landing">
+    <HeroLanding client:load />
+    <StatsSection client:visible />
+    <FeaturesSection client:visible />
+    <CTASection client:visible />
   </div>
 </Layout>
